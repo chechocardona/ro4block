@@ -1,6 +1,4 @@
-# B4OS-frontend
-
-# Blockchain4openscience (bforos-bnav1:frontend)
+# B4OS-frontend (bforos3:frontend)
 
 The project website is [here](http://blockchain4openscience.com/#home).
 
