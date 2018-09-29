@@ -7,6 +7,13 @@ The project is curretly in development using frameworks and tools from Hyperledg
 
 Before starting this tutorial, follow the steps described in [Blockchain4openscience/hyperledger](https://github.com/Blockchain4openscience/hyperledger) to deploy the hyperledger business network and start the composer rest server
 
+## Install CORS plugin
+
+Initially, the authentication process in orcid is performed in the frontend directly until the rest server is modified to perform authentication . For this reason, is necessary to install a CORS plugin for web navigator, some options can be:
+
+* [CORS everywhere](https://addons.mozilla.org/es/firefox/addon/cors-everywhere/) for firefox
+* [Moesif Origin](https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc) for chrome
+
 ## Interacting with an Angular application
 
 In order to build the user interfaces for this business network please clone the repository and follow the instructions
