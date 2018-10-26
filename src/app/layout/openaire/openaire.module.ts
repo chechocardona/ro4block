@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OpenaireRoutingModule } from './openaire-routing.module';
 import { OpenaireComponent } from './openaire.component';
+import { OpenaireRoutingModule } from './openaire-routing.module';
+import { MatButtonModule, MatIconModule, MatProgressBarModule, MatCardModule } from '@angular/material';
 
 @NgModule({
   imports: [
     CommonModule,
-    OpenaireRoutingModule
+    OpenaireRoutingModule,
+    MatButtonModule,
+    MatIconModule,
+    MatProgressBarModule,
+    MatCardModule
   ],
   declarations: [OpenaireComponent]
 })

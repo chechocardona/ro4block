@@ -21,7 +21,7 @@ export class AuthService {
 		data.set('client_secret', environment.orcidClientSecret);
 		data.set('grant_type', 'authorization_code');
 		data.set('code', code);
-		data.set('redirect_uri', 'http://localhost:4200/login');
+		data.set('redirect_uri', 'https://localhost:4200/login');
 		console.log(data);
 		return this.http.post(url, data, { headers: headers })
 			.toPromise()

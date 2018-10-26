@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SlideshareComponent } from './slideshare.component';
 
-describe('SlideshareComponent', () => {
+describe('GithubComponent', () => {
   let component: SlideshareComponent;
   let fixture: ComponentFixture<SlideshareComponent>;
 
@@ -23,3 +23,4 @@ describe('SlideshareComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+

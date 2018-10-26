@@ -1,9 +1,5 @@
-# B4OS-frontend (bforos3:frontend)
-
-The project website is [here](http://blockchain4openscience.com/#home).
-
------
-The project is curretly in development using frameworks and tools from Hyperledger, in particular [Fabric](https://hyperledger-fabric.readthedocs.io/en/release-1.1/) and [Composer](https://hyperledger.github.io/composer/latest/introduction/introduction)  
+# ro4block
+research objects in blockchain
 
 Before starting this tutorial, follow the steps described in [Blockchain4openscience/hyperledger](https://github.com/Blockchain4openscience/hyperledger) to deploy the hyperledger business network and start the composer rest server
 
@@ -54,26 +50,21 @@ composer network ping -c admin@bforos
 
 ## Interacting with the business network using the REST server 
 
-To create the REST API run the following command: 
+To create the REST API using https run the following commands: 
 `````
+export COMPOSER_TLS=true
 composer-rest-server -c admin@bforos -n never 
 `````
 use `admin@bforos` as the card name.
 
 Launch your browser and go to the URL given http://localhost:3000/explorer for interacting with it. Rest server generates an endpoint for each participant, asset and transaction of the business network definition. Go to the business model to review all operations in the rest server. yo can use a api environment tool (e.g. Postman) to send Http Request to Hypeledger.
 
-Additionally you can run hyperledger playground to see easily the changes in the components of the business model.
-
-`````
-composer-playground
-`````
-
 ## Front-end based on Angular application
 
 In order to build the user interfaces for this busness network please clone the repository and follow the instructions
 
 `````
-git clone https://github.com/Blockchain4openscience/B4OS-frontend
+git clone https://github.com/Blockchain4openscience/ro4block
 `````
 Now navigate to the folder. Check that npm is installed by running
 `````
@@ -87,7 +78,7 @@ Once the installation is complete run,
 `````
 npm start
 `````
-and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. 
+and navigate to `https://localhost:4200/`. The app will automatically reload if you change any of the source files. 
 
 Once the app is loaded log-in with ORCID account, however since we are in the testing fase of the forntenbd application any user must be registered in the orcid sandbox. Create a user in the [sandbox](https://sandbox.orcid.org/). After the user is creatred you can access the frontend. 
 
